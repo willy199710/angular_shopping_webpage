@@ -1,0 +1,23 @@
+<header>
+  <div class="container">
+    <a [routerLink]="['/']" class="logo">FoodOrder.</a>
+    <nav>
+      <ul>
+        <li>
+          <a routerLink="/login">登入</a>
+        </li>
+        <li class="menu-container">
+          <a routerLink="/dashboard">Willy</a>
+          <div class="menu">
+            <a routerLink="/profile">個人資料</a>
+            <a routerLink="/orders">點單</a>
+            <a>登出</a>
+          </div>
+        </li>
+        <li>
+          <a routerLink="/cart-page">購物車<span>3</span></a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
