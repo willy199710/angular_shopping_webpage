@@ -1,5 +1,5 @@
 import {Food} from './shared/models/Food';
-
+import {Tag} from './shared/models/Tag';
 export const sample_foods: Food[] = [
   {
     id:'1',
@@ -54,7 +54,7 @@ export const sample_foods: Food[] = [
     origins: ['印度', '亞洲'],
     stars: 3.0,
     imageUrl: 'assets/food-5.jpg',
-    tags: ['SlowFood', 'Soup'],
+    tags: ['小吃', '濃湯'],
   },
   {
     id:'6',
@@ -67,4 +67,15 @@ export const sample_foods: Food[] = [
     imageUrl: 'assets/food-6.jpg',
     tags: ['速食', 'Pizza', '午餐'],
   },
+]
+
+export const sample_tags: Tag[] =[
+  { name: 'All', count: 6},
+  { name: '速食', count: 4},
+  { name: 'Pizza', count: 2},
+  { name: '午餐', count: 3},
+  { name: '小吃', count: 3},
+  { name: '漢堡', count: 1},
+  { name: '炸物', count: 1},
+  { name: '濃湯', count: 1},
 ]

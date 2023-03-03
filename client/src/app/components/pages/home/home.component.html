@@ -1,5 +1,9 @@
 <input #searchByName class="searchInput" placeholder="想找什麼?" (change)="getFoodsByName(searchByName.value)" />
-
+<div class="tags" *ngIf="tags">
+  <button *ngFor="let tag of tags" (click)="getFoodsByTag(tag.name)">
+    {{tag.name}}({{tag.count}})
+  </button>
+</div>
 <ul>
   <li *ngFor="let food of foods">
     <a routerLink="/food/{{food.id}}">
@@ -35,10 +39,17 @@
           </div>
         </div>
 
-        <div class="price">
-          <span>
-            {{food.price | currency:'TWD':'symbol':'1.0'}}
-          </span>
+
+        <div class = "product-item-footer">
+          <div class="price">
+            <span>
+              {{food.price | currency:'TWD':'symbol':'1.0'}}
+            </span>
+          </div>
+
+          <button class="btn-add-to-cart">
+            加入購物車
+          </button>
         </div>
       </div>
     </a>

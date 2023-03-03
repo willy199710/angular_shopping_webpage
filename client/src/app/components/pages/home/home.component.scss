@@ -6,6 +6,11 @@ ul{
   padding: 0;
 }
 
+.tags a{
+  border: 1px solid #e72929;
+  border-radius: 1rem;
+  font-size: 0.9rem;
+}
 
 li a {
   height: 23rem;
@@ -57,10 +62,6 @@ li a img{
   align-items: flex-start;
 }
 
-.origins{
-  flex:9;
-}
-
 .origins span{
   border-radius: 2rem;
   background-color: whitesmoke;
@@ -79,14 +80,26 @@ li a img{
 }
 
 .price{
-  position: absolute;
   bottom: 0;
-  left: 0.9rem;
   background: white;
-  padding: 0.3rem 100% 0 0;
+  padding: 0.5rem 10% 0 0;
   color: #414141;
-  margin-top: 0.7rem;
   font-size: 1.1rem;
+}
+
+.btn-add-to-cart{
+  text-align: center;
+  padding: 0.2rem 0.5rem;
+  background-color: whitesmoke;
+  color: black;
+  border-radius: 10rem;
+  border: #e72929 solid 0.5px;
+  margin-top: 0.5rem;
+}
+
+.btn-add-to-cart:hover{
+  color:white;
+  background-color: #e72929;
 }
 
 input{
